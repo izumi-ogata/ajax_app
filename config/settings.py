@@ -78,7 +78,7 @@ WSGI_APPLICATION = 'config.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'ajax_app',
+        'NAME': 'ajax_app_clone',
         'USER': 'postgres',
         'PASSWORD': 'shum8809', # ご自身で設定したパスワード
         'HOST': 'localhost',
