@@ -35,8 +35,7 @@ SECRET_KEY = env('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
-
+ALLOWED_HOSTS = ['127.0.0.1', 'ajaxapp_production-<random_id>.onrender.com.com']
 
 # Application definition
 
@@ -90,7 +89,6 @@ default_dburl = "sqlite:///" + str(BASE_DIR / "db.sqlite3")
 DATABASES = {
     "default": config("DATABASE_URL", default=default_dburl, cast=dburl),
 }
-ALLOWED_HOSTS = ['127.0.0.1', 'ajaxapp-production-idcl.onrender.com']
 
 # //開発環境//
 # DATABASES = {
