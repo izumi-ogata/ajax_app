@@ -90,6 +90,7 @@ default_dburl = "sqlite:///" + str(BASE_DIR / "db.sqlite3")
 DATABASES = {
     "default": config("DATABASE_URL", default=default_dburl, cast=dburl),
 }
+ALLOWED_HOSTS = ['127.0.0.1', 'ajaxapp-production-idcl.onrender.com']
 
 # //開発環境//
 # DATABASES = {
