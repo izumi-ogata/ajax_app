@@ -11,10 +11,12 @@
   <button type="submit">投稿する</button>
 </form>
 
+<div class="posts-container"></div>
+
 {% for post in posts %}
   <div class="post">
     <div class="post-date">
-      投稿日時：{{ post.created_at }}
+      投稿日時：{{ post.created_at|date:"Y-m-d H:i:s" }}
     </div>
     <div class="post-content">
       {{ post.content }}

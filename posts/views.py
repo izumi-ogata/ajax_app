@@ -7,7 +7,7 @@ from .forms  import PostForm
 
 class IndexView(View):        
   def get(self,request,*args,**kwargs):
-    posts =  Post.objects.all()
+    posts =  Post.objects.all().order_by('-created_at')
     form = PostForm()
     return render(request, 'posts/index.html', {'posts': posts, 'form': form})
 
