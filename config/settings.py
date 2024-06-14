@@ -35,7 +35,7 @@ SECRET_KEY = env('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1', 'ajaxapp_production-<random_id>.onrender.com.com']
+ALLOWED_HOSTS = ['127.0.0.1', 'ajaxapp_production-se0v.onrender.com.com']
 
 # Application definition
 
